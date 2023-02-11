@@ -16,6 +16,6 @@ gulp.task('build_tree_script', function() {
     // Minify the file
     .pipe(uglify())
     // Output
-    .pipe(gulp.dest('./dist/js/mzdropdowntree/js'))
+    .pipe(gulp.dest('./dist/js'))
 });
  

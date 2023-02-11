@@ -604,11 +604,9 @@ registerOnFilterEvents = ($obj) =>{
     
         }    
         triggerSelectAllChildren = (obj, event) => {
-
-            setTimeout(function(){
-
             var  timeout = _self.data.url ? 500 : 0;
 
+            setTimeout(function(){
             if (obj.is(":checked")) {
                 detailTag = obj.parent().parent().parent();
                 detailTag.attr("open", true);
