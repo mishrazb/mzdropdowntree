@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-clean": "^0.4.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-less": "^5.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-uglify": "^3.0.2",
+    "jsdocs": "^0.0.1-security.40",
+    "node-sass": "^8.0.0"
+  },
+  "devDependencies": {
+    "jsdoc": "^4.0.0"
+  },
+  "name": "dropdowntree",
+  "version": "1.0.0",
+  "main": "mzdropdownlist.plugin.js",
+  "scripts": {
+    "docs": "jsdoc -c jsdoc.json "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

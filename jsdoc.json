@@ -1,0 +1,25 @@
+{
+    "plugins": [],
+    "recurseDepth": 10,
+    "source": {
+        "include": ["src"],
+        "exclude": ["node_modules/|docs|default_jsdoc_tpl/"],
+        "includePattern": ".+\\.js(doc|x)?$",
+        "excludePattern": "(^|\\/|\\\\)_"
+    },
+    "tags": {
+        "allowUnknownTags": true,
+        "dictionaries": ["jsdoc","closure"]
+    },
+    "templates": {
+        "cleverLinks": false,
+        "monospaceLinks": false
+    },
+    "opts": {
+        "template": "default_jsdoc_tpl",  
+        "encoding": "utf8",              
+        "destination": "./dist/docs/", 
+        "tutorials": "./dist/examples",                
+        "recurse": true               
+     }
+}
