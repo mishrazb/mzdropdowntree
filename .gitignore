@@ -1,0 +1,4 @@
+/default_jsdoc_tpl
+/default_jsdoc_tpl/*
+/node_modules
+/node_modules/*

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <!-- Favicon -->
+    <link href="/projects_dir/mzquerydropdowntree/images/logo_icon_32.png" rel="icon">
+    <script src="/DropDownTree/dist/assets/vendor/jQuery/jquery.js"></script>
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Pure HTML CSS jQuery DropDown tree, mzDropDownTree</title>
+    <meta name="description" content="Easy to use and customize drop in ready jQuery DropDownTree plugin" />
+    <meta name="keywords" content="Drop Down Tree, DropDownTree, jQueryDropDown tree" />
+    <link rel="stylesheet" href="css/mzdropdowntree.plugin.css" />
+    <script src="js/mzdropdowntree.plugin.js"></script>
+</head>
+
+<body>
+    <div class="callout callout-primary bg-light">
+        <h1 class="pb-3 mb-3 border-bottom">
+            mzDropDown Checkbox Tree
+        </h1>
+        <ul>
+            <li>mzDropDownCheckboxTree is a simple but powerful jQuery lightweight plugin. It can be used to display
+                data in hierarchy.</p>
+            <li>It uses html 5 detail and summary tags to expand and collapse data in hierarchy</li>
+            <li>It can be customized to accommodate a wide variety of scenarios.</li>
+            <li>Its absolutely free to use and distribute for your own project.</li>
+        </ul>
+    </div>
+    <div class="form-group code-group bg-white position-relative">
+        <div id="default-tree" data-key="default_tree[]" data-label="Default Tree"></div>
+
+        <button class="btn btn-outline-primary btn-code position-absolute" style="right:0; bottom:0" type="button"
+            data-bs-toggle="collapse" data-bs-target="#basic" aria-expanded="false"
+            aria-controls="basic">Source</button>
+
+        <div class="collapse" id="basic">
+            <code>
+<span style="color: #CC0000"></span><span style="color: black; font-weight: bold">&lt;</span><span style="color: #CC0000">script</span><span style="color: black; font-weight: bold">&gt;
+<br />&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;</span><span style="color: #CC0000">defaultOptions&nbsp;</span><span style="color: black; font-weight: bold">=&nbsp;{</span><span style="color: #CC0000">data</span><span style="color: black; font-weight: bold">:&nbsp;</span><span style="color: #CC0000">countries</span><span style="color: black; font-weight: bold">};&nbsp;
+<br />&nbsp;&nbsp;&nbsp;&nbsp;$(</span><span style="color: #0000FF">"#your-tree"</span><span style="color: black; font-weight: bold">).</span><span style="color: #CC0000">mzDropDownTree</span><span style="color: black; font-weight: bold">(</span><span style="color: #CC0000">defaultOptions</span><span style="color: black; font-weight: bold">);
+<br />&lt;/</span><span style="color: #CC0000">script</span><span style="color: black; font-weight: bold">&gt;
+<br />&lt;</span><span style="color: #CC0000">div&nbsp;id</span><span style="color: black; font-weight: bold">=</span><span style="color: #0000FF">"your-tree"&nbsp;</span><span style="color: #CC0000">data</span><span style="color: black; font-weight: bold">-</span><span style="color: #CC0000">label</span><span style="color: black; font-weight: bold">=</span><span style="color: #0000FF">"label"&nbsp;</span><span style="color: #CC0000">data</span><span style="color: black; font-weight: bold">-</span><span style="color: #CC0000">key</span><span style="color: black; font-weight: bold">=</span><span style="color: #0000FF">"field_name[]"</span><span style="color: black; font-weight: bold">&gt;&lt;/</span><span style="color: #CC0000">div</span><span style="color: black; font-weight: bold">&gt;</span></code>
+        </div>
+
+    </div>
+
+
+
+
+    <div class="callout callout-info  bg-light">
+        <h3>Step 1</h3>
+        <p>Include jQuery in your Page if its not already included</p>
+        <code
+            class="my-3"><span style="color: #CC0000"></span><span style="color: black; font-weight: bold">&lt;</span><span style="color: #CC0000">script&nbsp;&nbsp;src</span><span style="color: black; font-weight: bold">=</span><span style="color: #0000FF">"https://code.jquery.com/jquery-1.12.4.min.js"&nbsp;&nbsp;</span><span style="color: #CC0000">integrity</span><span style="color: black; font-weight: bold">=</span><span style="color: #0000FF">"sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="&nbsp;&nbsp;</span><span style="color: #CC0000">crossorigin</span><span style="color: black; font-weight: bold">=</span><span style="color: #0000FF">"anonymous"</span><span style="color: black; font-weight: bold">&gt;&lt;/</span><span style="color: #CC0000">script</span><span style="color: black; font-weight: bold">&gt;</span></code>
+
+        <p>Include mzDropDownTree Plugin and CSS in your page</p>
+        <code
+            class="my-1"><span style="color: #CC0000"></span><span style="color: black; font-weight: bold">&lt;</span><span style="color: #CC0000">script&nbsp;&nbsp;src</span><span style="color: black; font-weight: bold">=</span><span style="color: #0000FF">"mzDropDownTree.plugin.js"</span><span style="color: black; font-weight: bold">&gt;&lt;/</span><span style="color: #CC0000">script</span><span style="color: black; font-weight: bold">&gt;</span></code>
+        <code
+            class="my-1"> <span style="color: #CC0000"></span><span style="color: black; font-weight: bold">&lt;</span><span style="color: #CC0000">link&nbsp;href</span><span style="color: black; font-weight: bold">=</span><span style="color: #0000FF">"mzdropdowntree.plugin.css"&nbsp;</span><span style="color: black; font-weight: bold">/&gt;</span></code>
+
+    </div>
+
+    <div class="callout callout-info  bg-white">
+        <h3>Step 2</h3>
+        <p>Create a <strong>&lt;DIV&gt;</strong> root of the tree in your page</p>
+        <code><span style="color: #CC0000"></span><span style="color: black; font-weight: bold">&lt;</span><span style="color: #CC0000">div&nbsp;id</span><span style="color: black; font-weight: bold">=</span><span style="color: #0000FF">"your-tree-id"&nbsp;</span><span style="color: #CC0000">data</span><span style="color: black; font-weight: bold">-</span><span style="color: #CC0000">label</span><span style="color: black; font-weight: bold">=</span><span style="color: #0000FF">"Your&nbsp;tree&nbsp;label"&nbsp;</span><span style="color: #CC0000">data</span><span style="color: black; font-weight: bold">-</span><span style="color: #CC0000">description</span><span style="color: black; font-weight: bold">=</span><span style="color: #0000FF">"your&nbsp;tree&nbsp;description"</span><span style="color: black; font-weight: bold">&gt;&lt;/</span><span style="color: #CC0000">div</span><span style="color: black; font-weight: bold">&gt;</span></code>
+    </div>
+
+    <div class="callout callout-info bg-white">
+        <h3>Step 3</h3>
+        <p>Add Tree Configuration data</p>
+        <code class="my-3">
+<span style="color: #CC0000"></span><span style="color: black; font-weight: bold">var&nbsp;</span><span style="color: #CC0000">treeoptions&nbsp;</span><span style="color: black; font-weight: bold">=&nbsp;[{
+<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #CC0000">label</span><span style="color: black; font-weight: bold">:&nbsp;</span><span style="color: #0000FF">"Label"</span><span style="color: black; font-weight: bold">,
+<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #CC0000">value</span><span style="color: black; font-weight: bold">:&nbsp;</span><span style="color: #0000FF">"Value"</span><span style="color: black; font-weight: bold">,
+<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #CC0000">children</span><span style="color: black; font-weight: bold">:&nbsp;[
+<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{</span><span style="color: #CC0000">label</span><span style="color: black; font-weight: bold">:&nbsp;</span><span style="color: #0000FF">"Child&nbsp;Label"</span><span style="color: black; font-weight: bold">,&nbsp;</span><span style="color: #CC0000">value</span><span style="color: black; font-weight: bold">:</span><span style="color: #0000FF">"Child&nbsp;Value"</span><span style="color: black; font-weight: bold">}
+<br />&nbsp;&nbsp;&nbsp;&nbsp;]
+<br />}];
+<br />var&nbsp;</span><span style="color: #CC0000">options&nbsp;</span><span style="color: black; font-weight: bold">=&nbsp;{
+<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #CC0000">data</span><span style="color: black; font-weight: bold">:</span><span style="color: #CC0000">treeoptions
+<br /></span><span style="color: black; font-weight: bold">};
+<br /></span><span style="color: #CC0000">tree&nbsp;</span><span style="color: black; font-weight: bold">=&nbsp;$(</span><span style="color: #0000FF">"#your-tree-id"</span><span style="color: black; font-weight: bold">).</span><span style="color: #CC0000">mzDropDownTree</span><span style="color: black; font-weight: bold">(</span><span style="color: #CC0000">options</span><span style="color: black; font-weight: bold">);</span></code>
+        <p>The above code snippet shows how the data object is constructed. A object with label and value properties can
+            be nested to form checkbox nodes</p>
+    </div>
+    <div class="callout callout-primary bg-light">
+        <h2 class="pb-3 mb-3 border-bottom">
+            Examples
+        </h2>
+    </div>
+
+    <script src="/DropDownTree/data/us_canada_states.js"></script>
+    <script>
+        var cdata = [];
+        $(document).ready(function () {
+
+            $('#jsdocs').load(function () {
+                $(this).height($(this).contents().height());
+                $(this).width($(this).contents().width());
+            });
+
+
+            var defaultOptions = {
+                data: countries,
+                select_options: {
+                    toggle_select_parents: true,
+                    toggle_parent_selects_children: true
+                },
+            };
+            var disableChildrenOnParentSelect = {
+                description: "Disable Children if parent is selected, this option is helpful if you only want to store or work with the parent selection and you will determine the children with a wildcard suc as *",
+                select_options: {
+                    toggle_select_parents: true,
+                    toggle_parent_selects_children: true,
+                    disable_children_on_parent_selection: true
+                },
+                data: countries
+            };
+            var childnotautoselected = {
+                description: "Basic tree with the child selection is not automatic",
+                select_options: {
+                    toggle_select_parents: true,
+                    toggle_parent_selects_children: false
+                },
+                data: countries
+            };
+            var siblings = {
+                label: "Dropdown Tree 2",
+                select_options: {
+                    toggle_select_parents: false,
+                    toggle_select_all_siblings: true
+                },
+                data: countries
+            };
+
+            var us_states = countries.filter(country => country.value == "US")[0];
+            var flat_list = us_states.children;
+            var flatListOptions = {
+                default_value: [],
+                data: flat_list
+            };
+            var remoteDataOptions = {
+                data: {
+                    url: "/DropDownTree/data/data.php"
+                },
+                onDetailOpen: function (detail, a, b) {
+                    console.log("OnDetailOpenHook", detail);
+                    console.log("OnDetailOpenHook", a);
+                    console.log("OnDetailOpenHook", b);
+                }
+
+            };
+
+            $("#default-tree").mzDropDownTree(defaultOptions);
+            $("#child-disabled").mzDropDownTree(disableChildrenOnParentSelect);
+            $("#child-not-autoselected").mzDropDownTree(childnotautoselected);
+            $("#sibling-selector").mzDropDownTree(siblings);
+            $("#flat-list-tree").mzDropDownTree(flatListOptions);
+
+
+            $("#remote-data").mzDropDownTree(remoteDataOptions);
+
+
+        });
+    </script>
+    <form method="post">
+
+        <div class="form-group bg-white mb-3  p-3">
+            <div id="child-disabled" data-key="children_disabled[]" data-label="Disable Children"></div>
+        </div>
+        <div class="form-group bg-white mb-3  p-3">
+            <div id="child-not-autoselected" data-key="child_not_auto_selected[]"
+                data-label="Children not auto selected."
+                data-description="This is sometimes useful if you want to force a maximum selection.">
+            </div>
+        </div>
+        <div class="form-group bg-white mb-3 p-3">
+            <div id="sibling-selector" data-key="sibling_selector[]" data-label="Has a Sibling selector"
+                data-description="There is no parent selector checkbox, instead it has a sibling selector which acts as select all children but the parent value is not submitted at all.">
+            </div>
+        </div>
+        <div class="form-group bg-white mb-3  p-3">
+            <div id="flat-list-tree" data-mode="flat" data-key="state_names[]" data-label="Flat List Dropdown"
+                data-description="It can be used to display flat dropdown list"></div>
+
+        </div>
+
+        <div class="form-group bg-white mb-3  p-3">
+            <div id="remote-data" data-key="remote_options[]" data-label="Remote Options Dropdown"
+                data-description="Entire Tree is built from remote source of data"></div>
+
+        </div>
+
+
+        <div class="actions my-3">
+            <input type="submit" value="Submit" class="btn btn-submit btn-primary" />
+            <a href="documentation/config">Try the options configurator</a>
+        </div>
+    </form>
+    <p>Submit the above form to see the values array</p>
+    <code
+        class="border-thin"><span style="color: #CC0000"></span><span style="color: black; font-weight: bold">Array<br />(<br />)</span></pre></code>
+    <div class="content-block p-4 bg-white border rounded-3 shadow">
+        <h4>Adding Icons or images</h4>
+        <code class="my-3">
+<span style="color: #CC0000"></span><span style="color: black; font-weight: bold">var&nbsp;</span><span style="color: #CC0000">data&nbsp;</span><span style="color: black; font-weight: bold">=&nbsp;[{
+<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #CC0000">label</span><span style="color: black; font-weight: bold">:&nbsp;</span><span style="color: #0000FF">"Label"</span><span style="color: black; font-weight: bold">,
+<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #CC0000">value</span><span style="color: black; font-weight: bold">:&nbsp;</span><span style="color: #0000FF">"Value"</span><span style="color: black; font-weight: bold">,
+<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #CC0000">icon</span><span style="color: black; font-weight: bold">:&nbsp;{
+<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #CC0000">tag</span><span style="color: black; font-weight: bold">:</span><span style="color: #0000FF">"img"</span><span style="color: black; font-weight: bold">,&nbsp;
+<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #CC0000">attributes</span><span style="color: black; font-weight: bold">:{
+<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #CC0000">src</span><span style="color: black; font-weight: bold">:</span><span style="color: #0000FF">"source&nbsp;of&nbsp;the&nbsp;image"</span><span style="color: black; font-weight: bold">,&nbsp;
+<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;class:</span><span style="color: #0000FF">"class&nbsp;of&nbsp;the&nbsp;image"
+<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: black; font-weight: bold">},
+<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #CC0000">children</span><span style="color: black; font-weight: bold">:&nbsp;[
+<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{
+<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #CC0000">label</span><span style="color: black; font-weight: bold">:&nbsp;</span><span style="color: #0000FF">"Child&nbsp;Label"</span><span style="color: black; font-weight: bold">,
+<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #CC0000">value</span><span style="color: black; font-weight: bold">:</span><span style="color: #0000FF">"Child&nbsp;Value"
+<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #CC0000">icon</span><span style="color: black; font-weight: bold">:&nbsp;{
+<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #CC0000">tag</span><span style="color: black; font-weight: bold">:</span><span style="color: #0000FF">"img"</span><span style="color: black; font-weight: bold">,&nbsp;
+<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #CC0000">attributes</span><span style="color: black; font-weight: bold">:{
+<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #CC0000">src</span><span style="color: black; font-weight: bold">:</span><span style="color: #0000FF">"source&nbsp;of&nbsp;the&nbsp;image"</span><span style="color: black; font-weight: bold">,&nbsp;
+<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;class:</span><span style="color: #0000FF">"class&nbsp;of&nbsp;the&nbsp;image"
+<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: black; font-weight: bold">},
+<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+<br />&nbsp;&nbsp;&nbsp;&nbsp;]
+<br />}];</span> </code>
+
+    </div>
+
+
+    <div class="content-block mt-3 p-4 bg-white border rounded-3 shadow" id="more-properties">
+        <h4>All Properties</h4>
+        <iframe id="jsdocs" src="./docs/global.html" width="100%"
+            style="width:100%;border:none;overflow:hidden;"></iframe>
+
+    </div>
+    <!-- JavaScript Libraries -->
+</body>
+
+</html>

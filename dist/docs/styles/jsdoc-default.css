@@ -1,0 +1,279 @@
+@font-face {
+    font-family: 'Open Sans';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../fonts/OpenSans-Regular-webfont.eot');
+    src:
+        local('Open Sans'),
+        local('OpenSans'),
+        url('../fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/OpenSans-Regular-webfont.woff') format('woff'),
+        url('../fonts/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
+}
+
+@font-face {
+    font-family: 'Open Sans Light';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../fonts/OpenSans-Light-webfont.eot');
+    src:
+        local('Open Sans Light'),
+        local('OpenSans Light'),
+        url('../fonts/OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/OpenSans-Light-webfont.woff') format('woff'),
+        url('../fonts/OpenSans-Light-webfont.svg#open_sanslight') format('svg');
+}
+
+html
+{
+    overflow: auto;
+    background-color: #fff;
+    font-size: 16px;
+}
+
+body
+{
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+    color: #4d4e53;
+    background-color: white;
+}
+
+a, a:active {
+    color: #0095dd;
+    text-decoration: none;
+}
+a:visited{
+    color: #5502da;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header
+{
+    display: block;
+    padding: 0px 4px;
+}
+
+tt, code, kbd, samp {
+}
+
+.class-description {
+    font-size: 130%;
+    line-height: 140%;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+.class-description:empty {
+    margin: 0;
+}
+
+
+article dl {
+    margin-bottom: 40px;
+}
+
+article img {
+  max-width: 100%;
+}
+
+section
+{
+    display: block;
+    background-color: #fff;
+    padding: 12px 24px;
+    border-bottom: 1px solid #ccc;
+    margin-right: 30px;
+}
+
+.variation {
+    display: none;
+}
+
+.signature-attributes {
+    font-size: 60%;
+    color: #aaa;
+    font-style: italic;
+    font-weight: lighter;
+}
+#main{
+    width: 80%;
+    float:left;
+}
+nav{
+    width:20%;
+    float:left;
+}
+
+td, th
+{
+    border: 1px solid #ddd;
+    margin: 0px;
+    text-align: left;
+    vertical-align: top;
+    padding: 4px 6px;
+    display: table-cell;
+}
+
+thead tr
+{
+    background-color: #ddd;
+    font-weight: bold;
+}
+
+th { border-right: 1px solid #aaa; }
+tr > th:last-child { border-right: 1px solid #ddd; }
+
+.ancestors, .attribs { color: #999; }
+.ancestors a, .attribs a
+{
+    color: #999 !important;
+    text-decoration: none;
+}
+
+.clear
+{
+    clear: both;
+}
+
+.important
+{
+    font-weight: bold;
+    color: #950B02;
+}
+
+.yes-def {
+    text-indent: -1000px;
+}
+
+.type-signature {
+    color: #aaa;
+}
+
+.name, .signature {
+    color: #000;
+    font-weight: bold;
+}
+
+.details { margin-top: 14px; border-left: 2px solid #DDD; }
+.details dt { width: 120px; float: left; padding-left: 10px;  padding-top: 6px; }
+.details dd { margin-left: 70px; }
+.details ul { margin: 0; }
+.details ul { list-style-type: none; }
+.details li { margin-left: 30px; padding-top: 6px; }
+.details pre.prettyprint { margin: 0 }
+.details .object-value { padding-top: 0; }
+
+.description {
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+.code-caption
+{
+    font-style: normal;
+    font-size: 107%;
+    font-weight: bold;
+    margin-top: 30px;
+    color: #3873a7;
+}
+
+.source
+{
+    border: 1px solid #ddd;
+    width: 80%;
+    overflow: auto;
+}
+
+.prettyprint {
+    background: #fff;
+    border: 2px solid #d7d7d7;
+    box-shadow: 1px 6px 11px 0px #dbd9d9;
+    padding: 10px;
+    border-radius: 6px;
+    margin-top: 0;
+}
+.prettyprint code {
+    display: block;
+    color: unset;
+    padding: 10px;
+}
+.prettyprint.source {
+    width: inherit;
+}
+
+.source code
+{
+    font-size: 100%;
+    line-height: 18px;
+    display: block;
+    padding: 4px 12px;
+    margin: 0;
+    background-color: #fff;
+    color: #4D4E53;
+}
+
+.prettyprint code span.line
+{
+  display: inline-block;
+}
+
+.prettyprint.linenums
+{
+  padding-left: 70px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.prettyprint.linenums ol
+{
+  padding-left: 0;
+}
+
+.prettyprint.linenums li
+{
+  border-left: 3px #ddd solid;
+}
+
+.prettyprint.linenums li.selected,
+.prettyprint.linenums li.selected *
+{
+  background-color: lightyellow;
+}
+
+.prettyprint.linenums li *
+{
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+}
+
+.params .name, .props .name, .name code {
+    color: #1500b5;
+    font-size: 100%;
+    font-weight: bold;
+}
+
+.params td.description > p:first-child,
+.props td.description > p:first-child
+{
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.params td.description > p:last-child,
+.props td.description > p:last-child
+{
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.disabled {
+    color: #454545;
+}
